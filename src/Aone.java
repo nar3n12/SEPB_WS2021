@@ -37,9 +37,6 @@ public class Aone {
         return color;
     }
 
-    //task3
-
-
     public static void main(String []args){
         int a = 2*(-1);
         int sheep = 24;
