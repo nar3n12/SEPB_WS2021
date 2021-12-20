@@ -27,7 +27,6 @@ public class Stemmer {
         String[] sharedTemp = new String[length];
         for(int i=0;i<a.length;i++){
             for(int j=0;j<b.length;j++){
-                //System.out.println("a["+i+"] = "+a[i]+"; b["+j+"] = "+b[j]);
                 if(a[i].equals(b[j]))
                     sharedTemp[k++]=a[i];
             }
@@ -63,7 +62,7 @@ public class Stemmer {
         return false;
     }
 
-    /**
+
     public static void main(String []args){
         String[] house = getNGrams("house",3);
         String[] trousers = getNGrams("trousers",3);
@@ -71,6 +70,8 @@ public class Stemmer {
         System.out.println(getDistance(house,trousers));
         System.out.println(isRelevant("house","trousers"));
         System.out.println(isRelevant("house","the house is clean"));
-        //getNGrams("cat",5);
-    } **/
+        String[] cat = getNGrams("cat",5);
+        for(int i=0;i<cat.length;i++)
+            System.out.println(cat[i]);
+    }
 }
